@@ -81,13 +81,13 @@ class HistoryViewModel (application: Application) : ViewModel() {
 //    }
 }
 
-//class HistoryViewModelFactory(private val application: Application) : ViewModelProvider.Factory{
-//
-//    @Suppress("UNCHECKED_CAST")
-//    override fun <T : ViewModel> create(modelClass: Class<T>): T {
-//        if(modelClass.isAssignableFrom(HistoryViewModel::class.java)){
-//            return HistoryViewModel(application) as T
-//        }
-//        throw IllegalArgumentException("Unknown ViewModel Class")
-//    }
-//}
+class HistoryViewModelFactory(private val application: Application) : ViewModelProvider.Factory{
+
+    @Suppress("UNCHECKED_CAST")
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        if(modelClass.isAssignableFrom(HistoryViewModel::class.java)){
+            return HistoryViewModel(application) as T
+        }
+        throw IllegalArgumentException("Unknown ViewModel Class")
+    }
+}
