@@ -1,4 +1,4 @@
-package com.geez.lastofuswalkthrough.model.database
+package com.geez.itsabouttime.model.database
 
 import android.content.Context
 import androidx.room.*
